@@ -3,7 +3,7 @@ navigator.geolocation.getCurrentPosition(function(position){
     coord = [latitude, longitude]
     console.log(`https://www.google.com/maps/@${latitude},${longitude}`)
     console.log('Accuracy of location:', position.coords.accuracy);
-    var map = L.map('map').setView(coord, 13);
+    var map = L.map('map').setView(coord, 15);
 
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
